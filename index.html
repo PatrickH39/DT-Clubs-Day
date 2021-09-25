@@ -38,7 +38,7 @@
                 <div class="col-xl-6">
                     <div class="text-center text-white">
                         <!-- Page heading-->
-                        <h1 class="mb-5">Register for your clubs!</h1>
+                        <h1 class="mb-5"><span id="typing"></span></h1>
                     </div>
                 </div>
             </div>
@@ -217,6 +217,18 @@
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+    <script>
+        new TypeIt("#typing", {
+                speed: 80,
+            })
+            .pause(100)
+            .type("Welcome!")
+            .pause(500)
+            .delete(8)
+            .type("Scroll down and sign up for your clubs this year.")
+            .go();
+    </script>
 </body>
 
 </html>

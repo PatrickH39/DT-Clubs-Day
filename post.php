@@ -9,6 +9,15 @@ $db = new PDO('mysql:host=localhost;dbname=' . $db_name . ';charset=utf8mb4', $d
 if (isset($_POST))
 {
 
+    function isValid() {
+        if($_POST['studentNumber'] != "" && $_POST['fullName'] != "" && $_POST['emailAddress'] != "" && $_POST['selectedClub'] != "") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    if(isValid()) {
     $studentNumber = $_POST['studentNumber'];
     $fullName = $_POST['fullName'];
     $emailAddress = $_POST['emailAddress'];
@@ -27,8 +36,8 @@ if (isset($_POST))
     {
         echo 'There was an error processing your form. Please email patrick@patrickh.ca immediately.';
     }
-}
-else
+}else
 {
-    echo 'No data';
-}
+    header("Location: /");
+    die();
+}}

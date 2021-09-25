@@ -125,6 +125,7 @@
         </div>
     </section>
     <!-- Call to Action-->
+
     <section id="signup" class="clubs bg-light">
         <h2 class="mb-5">Sign Up</h2>
         <div class="container px-5 my-5">
@@ -217,7 +218,18 @@
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("form").submit(function() {
+                if ($('input:checkbox').filter(':checked').length < 1) {
+                    alert("You need to join at least one club!");
+                    return false;
+                }
+            });
+        });
+    </script>
     <script>
         new TypeIt("#typing", {
                 speed: 80,

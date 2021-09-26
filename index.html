@@ -131,7 +131,7 @@
         <div class="container px-5 my-5">
             <form id="contactForm" method="post" action="post.php">
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="studentNumber" name="studentNumber" type="text" pattern="\d*" placeholder="Student Number" maxlength="7" required="">
+                    <input class="form-control" id="studentNumber" name="studentNumber" type="text" pattern="\d*" placeholder="Student Number" minlength="6" maxlength="7" required="">
                     <label for="studentNumber">Student Number</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -221,16 +221,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $("form").submit(function() {
-                if ($('input:checkbox').filter(':checked').length < 1) {
-                    alert("You need to join at least one club!");
-                    return false;
-                }
-            });
-        });
-    </script>
-    <script>
+        // Landing Auto-Typer
         new TypeIt("#typing", {
                 speed: 80,
             })
@@ -240,6 +231,32 @@
             .delete(8)
             .type("Scroll down and sign up for your clubs this year.")
             .go();
+
+        // Must join at least one club.
+        $(document).ready(function() {
+            $("form").submit(function() {
+                if ($('input:checkbox').filter(':checked').length < 1) {
+                    alert("You need to join at least one club!");
+                    return false;
+                }
+            });
+        });
+
+        const stuNumInput = document.querySelector('input');
+        const form = document.querySelector('form');
+
+        stuNumInput.addEventListener('input', () => {
+            stuNumInput.setCustomValidity('');
+            stuNumInput.checkValidity();
+        });
+
+        stuNumInput.addEventListener('invalid', () => {
+            if (stuNumInput.value === '') {
+                stuNumInput.setCustomValidity('Please enter your student number.');
+            } else {
+                stuNumInput.setCustomValidity('That is an invalid student number.');
+            }
+        });
     </script>
 </body>
 

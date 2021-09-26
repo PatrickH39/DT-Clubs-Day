@@ -1,8 +1,8 @@
 <?php
 
-$db_user = "root";
+$db_user = "";
 $db_pass = "";
-$db_name = "userdata";
+$db_name = "master";
 
 $db = new PDO('mysql:host=localhost;dbname=' . $db_name . ';charset=utf8mb4', $db_user, $db_pass);
 
@@ -22,10 +22,11 @@ if (isset($_POST))
     $fullName = $_POST['fullName'];
     $emailAddress = $_POST['emailAddress'];
     $selectedClub = implode(',', $_POST['selectedClub']);
+    $ip = $_SERVER['REMOTE_ADDR'];
 
-    $sql = "INSERT INTO form (studentNumber, fullName, emailAddress, selectedClub) VALUES(?,?,?,?)";
+    $sql = "INSERT INTO formData (ipAddr, studentNumber, fullName, emailAddress, selectedClub) VALUES(?,?,?,?,?)";
     $stmtinsert = $db->prepare($sql);
-    $result = $stmtinsert->execute([$studentNumber, $fullName, $emailAddress, $selectedClub]);
+    $result = $stmtinsert->execute([$ip, $studentNumber, $fullName, $emailAddress, $selectedClub]);
     if ($result)
     {
         header("Location: /success");

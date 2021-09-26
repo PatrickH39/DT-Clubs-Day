@@ -218,46 +218,7 @@
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
-    <script type="text/javascript">
-        // Landing Auto-Typer
-        new TypeIt("#typing", {
-                speed: 80,
-            })
-            .pause(100)
-            .type("Welcome!")
-            .pause(500)
-            .delete(8)
-            .type("Scroll down and sign up for your clubs this year.")
-            .go();
-
-        // Must join at least one club.
-        $(document).ready(function() {
-            $("form").submit(function() {
-                if ($('input:checkbox').filter(':checked').length < 1) {
-                    alert("You need to join at least one club!");
-                    return false;
-                }
-            });
-        });
-
-        const stuNumInput = document.querySelector('input');
-        const form = document.querySelector('form');
-
-        stuNumInput.addEventListener('input', () => {
-            stuNumInput.setCustomValidity('');
-            stuNumInput.checkValidity();
-        });
-
-        stuNumInput.addEventListener('invalid', () => {
-            if (stuNumInput.value === '') {
-                stuNumInput.setCustomValidity('Please enter your student number.');
-            } else {
-                stuNumInput.setCustomValidity('That is an invalid student number.');
-            }
-        });
-    </script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

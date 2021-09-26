@@ -16,9 +16,11 @@
     <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="/css/main.css" rel="stylesheet" />
 </head>
@@ -81,42 +83,54 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="club-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.discordapp.com/icons/754193539725787137/8d5ad7df9cd2ef5326d6adf9bb760709.webp" alt="Science Club">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="https://cdn.discordapp.com/icons/754193539725787137/8d5ad7df9cd2ef5326d6adf9bb760709.webp"
+                            alt="Science Club">
                         <h5>Science Club</h5>
                         <p class="font-weight-light mb-0">hi meetings are room 212</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="club-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.discordapp.com/icons/730646649428508762/bcf2381b7f4b61888ee1aa6367667e92.webp" alt="..." />
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="https://cdn.discordapp.com/icons/730646649428508762/bcf2381b7f4b61888ee1aa6367667e92.webp"
+                            alt="..." />
                         <h5>Placeholder</h5>
                         <p class="font-weight-light mb-0">doggo dead :(</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="club-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp" alt="..." />
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp"
+                            alt="..." />
                         <h5>Placeholder</h5>
                         <p class="font-weight-light mb-0">hi</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="club-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp" alt="...">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp"
+                            alt="...">
                         <h5>Placeholder</h5>
                         <p class="font-weight-light mb-0">hi</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="club-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp" alt="...">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp"
+                            alt="...">
                         <h5>Placeholder</h5>
                         <p class="font-weight-light mb-0">hi</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="club-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp" alt="...">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="https://cdn.discordapp.com/avatars/886834940296187916/4bb79a53aaeb4c782d9c5e0586f2901b.webp"
+                            alt="...">
                         <h5>Placeholder</h5>
                         <p class="font-weight-light mb-0">hi</p>
                     </div>
@@ -131,57 +145,79 @@
         <div class="container px-5 my-5">
             <form id="contactForm" method="post" action="post.php">
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="studentNumber" name="studentNumber" type="text" pattern="\d*" placeholder="Student Number" minlength="6" maxlength="7" required="">
+                    <input class="form-control" id="accessCode" name="accessCode" type="text" placeholder="Access Code"
+                        oninvalid="this.setCustomValidity('Please enter the access code found on Teams.')"
+                        oninput="this.setCustomValidity('')" required="">
+                    <label for="accessCode">Access Code</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="studentNumber" name="studentNumber" type="text" pattern="\d*"
+                        placeholder="Student Number" minlength="6" maxlength="7"
+                        oninvalid="this.setCustomValidity('Please enter a valid student number.')"
+                        oninput="this.setCustomValidity('')" required>
                     <label for="studentNumber">Student Number</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="fullName" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" name="fullName" type="text" placeholder="Full Name" required="">
+                    <input class="form-control" id="fullName"
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"
+                        name="fullName" type="text" placeholder="Full Name" required="">
                     <label for="fullName">Full Name</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" required="">
+                    <input class="form-control" id="emailAddress" name="emailAddress" type="email"
+                        placeholder="Email Address" required="">
                     <label for="emailAddress">Email Address</label>
                 </div>
                 <div class="mb-3" style="margin-top: 2rem;">
                     <label class="form-label d-block">I would like to sign up for:</label>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="scienceClub" type="checkbox" value="scienceClub" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="scienceClub" type="checkbox"
+                            value="scienceClub" name="selectedClub[]">
                         <label class="form-check-label" for="scienceClub">Science Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="medicalClub" type="checkbox" value="medicalClub" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="medicalClub" type="checkbox"
+                            value="medicalClub" name="selectedClub[]">
                         <label class="form-check-label" for="medicalClub">Medical Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="makerClub" type="checkbox" value="makerClub" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="makerClub" type="checkbox" value="makerClub"
+                            name="selectedClub[]">
                         <label class="form-check-label" for="makerClub">Maker Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="modelUn" type="checkbox" value="modelUn" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="modelUn" type="checkbox" value="modelUn"
+                            name="selectedClub[]">
                         <label class="form-check-label" for="modelUn">Model UN</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="jazzBand" type="checkbox" value="jazzBand" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="jazzBand" type="checkbox" value="jazzBand"
+                            name="selectedClub[]">
                         <label class="form-check-label" for="jazzBand">Jazz Band</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="eSports" type="checkbox" value="eSports" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="eSports" type="checkbox" value="eSports"
+                            name="selectedClub[]">
                         <label class="form-check-label" for="eSports">eSports</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="chat" type="checkbox" value="chat" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="chat" type="checkbox" value="chat"
+                            name="selectedClub[]">
                         <label class="form-check-label" for="chat">CHAT</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="library" type="checkbox" value="library" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="library" type="checkbox" value="library"
+                            name="selectedClub[]">
                         <label class="form-check-label" for="library">Library</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="business" type="checkbox" value="business" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="business" type="checkbox" value="business"
+                            name="selectedClub[]">
                         <label class="form-check-label" for="business">Business</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" class="selectedClub" id="stemSorority" type="checkbox" value="stemSorority" name="selectedClub[]">
+                        <input class="form-check-input selectedClub" id="stemSorority" type="checkbox"
+                            value="stemSorority" name="selectedClub[]">
                         <label class="form-check-label" for="stemSorority">Stem Sorority</label>
                     </div>
                 </div>

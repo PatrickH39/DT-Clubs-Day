@@ -21,19 +21,3 @@ $(document).ready(function () {
         }
     });
 });
-
-const stuNumInput = document.querySelector('input');
-const form = document.querySelector('form');
-
-stuNumInput.addEventListener('input', () => {
-    stuNumInput.setCustomValidity('');
-    stuNumInput.checkValidity();
-});
-
-stuNumInput.addEventListener('invalid', () => {
-    if (stuNumInput.value === '') {
-        stuNumInput.setCustomValidity('Please enter your student number.');
-    } else {
-        stuNumInput.setCustomValidity('That is an invalid student number.');
-    }
-});

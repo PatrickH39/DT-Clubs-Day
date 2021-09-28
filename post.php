@@ -1,62 +1,51 @@
 <?php
-$db_user = "";
-$db_pass = "";
-$db_name = "master";
+$db = new mysqli("hostname", "username", "password", "database");
 
-$db = new PDO('mysql:host=localhost;dbname=' . $db_name . ';charset=utf8mb4', $db_user, $db_pass);
-
-if (isset($_POST))
-
-
-
-{
-    function validCode() {
-        if($_POST['accessCode'] != ""){
-            return false;
-        } else {
-            return true;
-        }
-
-    }
-
-    function isValid() {
-        if($_POST['studentNumber'] != "" && $_POST['fullName'] != "" && $_POST['emailAddress'] != "" && $_POST['selectedClub'] != "") {
-            return true;
-        } else {
-            return false;
-        }
-    }
-if(validCode()){
-    if(isValid()) {
-
-        $studentNumber = $_POST['studentNumber'];
-        $fullName = $_POST['fullName'];
-        $emailAddress = $_POST['emailAddress'];
-        $ip = $_SERVER['REMOTE_ADDR'];
-        $selectedClub = implode(',', $_POST['selectedClub']);
-    
-        $sql = "INSERT INTO formData (ipAddr, studentNumber, fullName, emailAddress, selectedClub) VALUES(?,?,?,?,?)";
-        $stmtinsert = $db->prepare($sql);
-        $result = $stmtinsert->execute([$ip, $studentNumber, $fullName, $emailAddress, $selectedClub]);
-
-        if ($result)
-        {
-            header("Location: /success");
-            die();
-        }
-        else
-        {
-            echo 'There was an error processing your form. Please email patrick@patrickh.ca immediately.';
-            die();
-        }
-    }else
+if (isset($_POST)) {
+    function validCode()
     {
-        header("There was an error processing your form. Please email patrick@patrickh.ca immediately.");
+        if ($_POST['accessCode'] != "password") {
+            return false;
+        } else {
+            return true;
+        }
+        
+    }
+    
+    function isValid()
+    {
+        if ($_POST['studentNumber'] != "" && $_POST['fullName'] != "" && $_POST['emailAddress'] != "" && $_POST['selectedClub'] != "") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    if (validCode()) {
+        if (isValid()) {
+            
+            $studentNumber = $_POST['studentNumber'];
+            $fullName      = $_POST['fullName'];
+            $emailAddress  = $_POST['emailAddress'];
+            $ipAddr        = $_SERVER["HTTP_CF_CONNECTING_IP"];
+            $selectedClub  = $_POST['selectedClub'];
+            
+            $sql    = "INSERT INTO formData (ipAddr, studentNumber, fullName, emailAddress, selectedClub) VALUES('$ipAddr',$studentNumber,'$fullName','$emailAddress','$selectedClub')";
+            $result = mysqli_query($db, $sql);
+            
+            if ($result) {
+                echo ('Your response have been recorded.');
+                die();
+            } else {
+                echo 'You are missing form fields, please double check your response.';
+                die();
+            }
+        } else {
+            echo ('You are missing form fields. Double check your info.');
+            die();
+        }
+        
+    } else {
+        echo 'Invalid access code. Check the All Students @ DTSS Teams or email patrick@patrickh.ca';
         die();
     }
-
-} else{
-    echo 'Invalid access code. Check Teams!';
-    die();
-}
 }

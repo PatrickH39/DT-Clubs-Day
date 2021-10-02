@@ -2060,6 +2060,7 @@ button:not(:disabled) {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
     outline: 0;
+    text-align: left;
 }
 
 .modal-backdrop {
@@ -2924,7 +2925,7 @@ button:not(:disabled) {
 }
 
 .rounded-circle {
-    border-radius: 50%!important
+    border-radius: 20%!important
 }
 
 .rounded-top {

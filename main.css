@@ -79,6 +79,18 @@
     }
 }
 
+::-moz-selection {
+    background: #fcfcfccb;
+    background: rgba(15, 13, 13, 0.24);
+    text-shadow: none
+}
+
+ ::selection {
+    background: #fcfcfccb;
+    background: rgba(15, 13, 13, 0.24);
+    text-shadow: none
+}
+
 body {
     margin: 0;
     font-family: var(--bs-body-font-family);

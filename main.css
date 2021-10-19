@@ -34,7 +34,7 @@ body {
   width: 100%;
   line-height: 1.4;
   text-align: center;
-  padding: 15px;
+  padding: 30px;
 }
 
 .master .master-main {
@@ -50,7 +50,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 186px;
+  font-size: 138px;
   font-weight: 200;
   margin: 0px;
   background: linear-gradient(130deg, #ffa34f, #ff6f68);
@@ -73,7 +73,7 @@ body {
 
 .master p {
   font-family: 'Kanit', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 200;
   margin-top: 0px;
   margin-bottom: 25px;
@@ -95,7 +95,7 @@ body {
   }
 
   .master .master-main h1 {
-    font-size: 142px;
+    font-size: 80px;
   }
 
   .master h2 {

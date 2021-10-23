@@ -1597,7 +1597,7 @@
                     <input class="form-control" id="studentNumber" type="text" pattern="\d*"
                         placeholder="Student Number" minlength="6" maxlength="7"
                         oninvalid="this.setCustomValidity('Please enter a valid student number.')"
-                        oninput="this.setCustomValidity('')" required />
+                        oninput="this.setCustomValidity('')" required disabled />
                     <label for="studentNumber">Student Number</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -1615,148 +1615,154 @@
                     <label class="form-label d-block">I would like to sign up for:</label>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="scienceClub" type="checkbox"
-                            value="scienceClub" />
+                            value="scienceClub" disabled />
                         <label class="form-check-label" for="scienceClub">Science Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="codeClub" type="checkbox" value="codeClub" />
+                        <input class="form-check-input selectedClub" id="codeClub" type="checkbox" value="codeClub"
+                            disabled />
                         <label class="form-check-label" for="codeClub">Code Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="cst" type="checkbox" value="cst" />
+                        <input class="form-check-input selectedClub" id="cst" type="checkbox" value="cst" disabled />
                         <label class="form-check-label" for="cst">Community Schools Team </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="serviceClub" type="checkbox"
-                            value="serviceClub" />
+                            value="serviceClub" disabled />
                         <label class="form-check-label" for="serviceClub">Service Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="medicalClub" type="checkbox"
-                            value="medicalClub" />
+                            value="medicalClub" disabled />
                         <label class="form-check-label" for="medicalClub">Medical Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="debateClub" type="checkbox"
-                            value="debateClub" />
+                        <input class="form-check-input selectedClub" id="debateClub" type="checkbox" value="debateClub"
+                            disabled />
                         <label class="form-check-label" for="debateClub">Debate Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="modelUn" type="checkbox" value="modelUn" />
+                        <input class="form-check-input selectedClub" id="modelUn" type="checkbox" value="modelUn"
+                            disabled />
                         <label class="form-check-label" for="modelUn">Model UN</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="hope" type="checkbox" value="hope" />
+                        <input class="form-check-input selectedClub" id="hope" type="checkbox" value="hope" disabled />
                         <label class="form-check-label" for="hope">DT Hands of HOPE</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="yearbookClub" type="checkbox"
-                            value="yearbook" />
+                        <input class="form-check-input selectedClub" id="yearbookClub" type="checkbox" value="yearbook"
+                            disabled />
                         <label class="form-check-label" for="yearbookClub">Yearbook Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="chat" type="checkbox" value="chat" />
+                        <input class="form-check-input selectedClub" id="chat" type="checkbox" value="chat" disabled />
                         <label class="form-check-label" for="chat">CHAT</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="dtWatersports" type="checkbox"
-                            value="dtWatersports" />
+                            value="dtWatersports" disabled />
                         <label class="form-check-label" for="dtWatersports">DT Watersports</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="businessClub" type="checkbox"
-                            value="businessClub" />
+                            value="businessClub" disabled />
                         <label class="form-check-label" for="businessClub">Business Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="girlsClub" type="checkbox" value="girlsClub" />
+                        <input class="form-check-input selectedClub" id="girlsClub" type="checkbox" value="girlsClub"
+                            disabled />
                         <label class="form-check-label" for="girlsClub">Girls Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="fellowshipClub" type="checkbox"
-                            value="fellowshipClub" />
+                            value="fellowshipClub" disabled />
                         <label class="form-check-label" for="fellowshipClub">DT Fellowship Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="unfilteredClub" type="checkbox"
-                            value="unfilteredClub" />
+                            value="unfilteredClub" disabled />
                         <label class="form-check-label" for="unfilteredClub">DT's Unfiltered Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="timeAndEffort" type="checkbox"
-                            value="timeAndEffort" />
+                            value="timeAndEffort" disabled />
                         <label class="form-check-label" for="timeAndEffort">Time and Effort</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="recyclingClub" type="checkbox"
-                            value="recyclingClub" />
+                            value="recyclingClub" disabled />
                         <label class="form-check-label" for="recyclingClub">Recycling Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="dramaClub" type="checkbox" value="dramaClub" />
+                        <input class="form-check-input selectedClub" id="dramaClub" type="checkbox" value="dramaClub"
+                            disabled />
                         <label class="form-check-label" for="dramaClub">Drama Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="journalismClub" type="checkbox"
-                            value="journalismClub" />
+                            value="journalismClub" disabled />
                         <label class="form-check-label" for="journalismClub">Journalism Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="danceTeam" type="checkbox" value="danceTeam" />
+                        <input class="form-check-input selectedClub" id="danceTeam" type="checkbox" value="danceTeam"
+                            disabled />
                         <label class="form-check-label" for="danceTeam">Dance Team</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="engagementCommunityClub" type="checkbox"
-                            value="engagementCommunityClub" />
+                            value="engagementCommunityClub" disabled />
                         <label class="form-check-label" for="engagementCommunityClub">Engagement Community Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="boredGamesClub" type="checkbox"
-                            value="boredGamesClub" />
+                            value="boredGamesClub" disabled />
                         <label class="form-check-label" for="boredGamesClub">Bored Games Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="makerClub" type="checkbox" value="makerClub" />
+                        <input class="form-check-input selectedClub" id="makerClub" type="checkbox" value="makerClub"
+                            disabled />
                         <label class="form-check-label" for="makerClub">3D Designer and Maker Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="scorekeepingClub" type="checkbox"
-                            value="scorekeepingClub" />
+                            value="scorekeepingClub" disabled />
                         <label class="form-check-label" for="scorekeepingClub">Scorekeeping Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="hungerBites" type="checkbox"
-                            value="hungerBites" />
+                            value="hungerBites" disabled />
                         <label class="form-check-label" for="hungerBites">Hunger Bites</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="liberalArtsClub" type="checkbox"
-                            value="liberalArtsClub" />
+                            value="liberalArtsClub" disabled />
                         <label class="form-check-label" for="liberalArtsClub">DT Liberal Arts Club</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="hockeyClub" type="checkbox"
-                            value="hockeyClub" />
+                        <input class="form-check-input selectedClub" id="hockeyClub" type="checkbox" value="hockeyClub"
+                            disabled />
                         <label class="form-check-label" for="hockeyClub">Hockey Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="ceramicsClub" type="checkbox"
-                            value="ceramicsClub" />
+                            value="ceramicsClub" disabled />
                         <label class="form-check-label" for="ceramicsClub">Ceramics Club</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="stemSorority" type="checkbox"
-                            value="stemSorority" />
+                            value="stemSorority" disabled />
                         <label class="form-check-label" for="stemSorority">Stem Sorority</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input selectedClub" id="here4peers" type="checkbox"
-                            value="here4peers" />
+                        <input class="form-check-input selectedClub" id="here4peers" type="checkbox" value="here4peers"
+                            disabled />
                         <label class="form-check-label" for="here4peers">Here4Peers</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input selectedClub" id="libraryClub" type="checkbox"
-                            value="libraryClub" />
+                            value="libraryClub" disabled />
                         <label class="form-check-label" for="libraryClub">Library Club</label>
                     </div>
                 </div>

@@ -1590,7 +1590,7 @@
                 <div class="form-floating mb-3">
                     <input class="form-control" id="accessCode" type="text" placeholder="Access Code"
                         oninvalid="this.setCustomValidity('Please enter the access code found on Teams.')"
-                        oninput="this.setCustomValidity('')" required />
+                        oninput="this.setCustomValidity('')" required disabled />
                     <label for="accessCode">Access Code</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -1603,11 +1603,12 @@
                 <div class="form-floating mb-3">
                     <input class="form-control" id="fullName"
                         onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"
-                        type="text" placeholder="Full Name" required />
+                        type="text" placeholder="Full Name" required disabled />
                     <label for="fullName">Full Name</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" required />
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" required
+                        disabled />
                     <label for="emailAddress">Email Address</label>
                 </div>
                 <div class="mb-3" style="margin-top: 2rem;">
@@ -1760,7 +1761,7 @@
                     </div>
                 </div>
                 <div class="d-grid">
-                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit" disabled>Submit</button>
                 </div>
             </form>
         </div>

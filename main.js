@@ -1,12 +1,12 @@
-$("img").contextmenu(function () {
+$("img").contextmenu(function() {
     return false;
 });
 
-$("img").mousedown(function (e) {
+$("img").mousedown(function(e) {
     e.preventDefault()
 });
 
-document.onkeydown = function (e) {
+document.onkeydown = function(e) {
     if (event.keyCode == 123) {
         return false;
     }
@@ -42,23 +42,23 @@ document.onkeydown = function (e) {
 
 
 new TypeIt("#typing", {
-    speed: 70,
-})
+        speed: 70,
+    })
     .pause(100)
     .type("Welcome!")
     .pause(1000)
     .delete(8)
-    .type("Scroll down and <strong>sign up</strong> for your clubs this year.")
+    .type("Club sign-ups are now closed.")
     .pause(1300)
-    .delete(49)
-    .type("Click on any club icon for more info.")
+    .delete(29)
+    .type("Got some questions about clubs?")
     .pause(1000)
-    .delete(37)
-    .type("Explore the clubs!")
+    .delete(31)
+    .type("Contact the club's teacher sponsor.")
     .go();
 
-$(document).ready(function () {
-    $("form").submit(function () {
+$(document).ready(function() {
+    $("form").submit(function() {
         if ($('input:checkbox').filter(':checked').length < 1) {
             alert("You need to join at least one club!");
             return false;
@@ -66,8 +66,8 @@ $(document).ready(function () {
     });
 });
 
-$(function () {
-    $('#submitButton').click(function (e) {
+$(function() {
+    $('#submitButton').click(function(e) {
         var valid = this.form.checkValidity();
 
         if (valid) {
@@ -77,7 +77,7 @@ $(function () {
             var emailAddress = $('#emailAddress').val();
 
             var selectedClub = [];
-            $('.selectedClub').each(function () {
+            $('.selectedClub').each(function() {
                 if ($(this).is(":checked")) {
                     selectedClub.push($(this).val());
                 }
@@ -97,7 +97,7 @@ $(function () {
                     emailAddress: emailAddress,
                     selectedClub: selectedClub
                 },
-                success: function (data) {
+                success: function(data) {
                     Swal.fire({
                         'title': 'Information',
                         'text': data,
@@ -107,10 +107,10 @@ $(function () {
 
                     document.getElementById("clubRegistration").reset();
                 },
-                error: function (data) {
+                error: function(data) {
                     Swal.fire({
                         'title': 'Error',
-                        'text': data,
+                        'text': 'Club sign-ups are now disabled. Contact clubs directly to sign up!',
                         'icon': 'error',
                         'confirmButtonColor': '#3085d6'
                     })

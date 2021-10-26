@@ -49,7 +49,7 @@ new TypeIt("#typing", {
     .pause(1000)
     .delete(8)
     .type("Club sign-ups are now closed.")
-    .pause(1300)
+    .pause(1000)
     .delete(29)
     .type("Got some questions about clubs?")
     .pause(1000)

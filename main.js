@@ -51,10 +51,13 @@ new TypeIt("#typing", {
     .type("Club sign-ups are now closed.")
     .pause(1000)
     .delete(29)
-    .type("Got some questions about clubs?")
+    .type("Have any questions?")
     .pause(1000)
-    .delete(31)
-    .type("Contact the club's teacher sponsor.")
+    .delete(19)
+    .type("Please contact the teacher sponsor.")
+    .pause(1500)
+    .delete(35)
+    .type("Explore the clubs!")
     .go();
 
 $(document).ready(function() {

@@ -1,6 +1,5 @@
-<div id="top"></div>
 <!-- PROJECT LOGO -->
-<br />
+<br>
 <div align="center">
   <a href="https://dtclubsday.ca">
     <img src="https://raw.githubusercontent.com/patrickh39/DT-Clubs-Day/main/images/favicon/apple-touch-icon.png" alt="Logo">

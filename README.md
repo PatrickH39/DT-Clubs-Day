@@ -22,7 +22,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p>This website was created in collaboration with <a href="https://www.instagram.com/DTStudentCouncil"><b>DT Student Council</b></a> for students at <a href="https://thompson.vsb.bc.ca"><b>David Thompson Secondary</b></a> to sign up for their desired clubs. There were over 30 clubs to choose from this year and there were 300+ submissions made using the website.</p> 
+<p>This website was created in collaboration with <a href="https://www.instagram.com/DTStudentCouncil"><b>DT Student Council</b></a> for students at <a href="https://thompson.vsb.bc.ca"><b>David Thompson Secondary</b></a> to sign up for their desired clubs. There were over 30 clubs to choose from this year and there were 400+ submissions made using the website.</p> 
 <p>Although Clubs Day is now over, anyone can still view the clubs available and contact teacher sponsors directly regarding information about a specific club.</p>
 
 ### Built With

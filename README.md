@@ -43,7 +43,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-For any inquiries regarding this project, please email me at **[patrick@patrickh.ca](mailto:patrick@patrickh.ca)**.
+For any inquiries regarding this project, please email me at **[patrick@patrickh.ca](mailto:patrick@patrickh.ca)** or shoot me a message on **[Discord](https://discord.com/users/114187775787532294)** with tag ``PatrickH39#2097``
 
 
 <!-- ACKNOWLEDGMENTS -->

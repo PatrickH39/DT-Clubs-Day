@@ -43,7 +43,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 <!-- CONTACT -->
 ## Contact
 
-For any inquiries regarding this project, please email me at **[patrick@patrickh.ca](mailto:patrick@patrickh.ca)** or shoot me a message on **[Discord](https://discord.com/users/114187775787532294)** with tag ``PatrickH39#2097``
+For any inquiries regarding this project, please email **[help@dtclubsday.ca](mailto:help@dtclubsday.ca)**.
 
 
 <!-- ACKNOWLEDGMENTS -->

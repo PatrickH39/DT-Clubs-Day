@@ -12,7 +12,7 @@
     <br />
     <a href="https://github.com/patrickh39/DT-Clubs-Day/issues">Report Bug</a>
     ·
-    <a href="https://dtclubsday.ca"><b>View Demo</b></a>
+    <a href="https://dtclubsday.ca"><b>View Website</b></a>
     ·
     <a href="https://github.com/patrickh39/DT-Clubs-Day#contact">Contact</a>
   </p>

@@ -2,7 +2,7 @@
 <br>
 <div align="center">
   <a href="https://clubsday.patrickh.ca">
-    <img src="https://raw.githubusercontent.com/patrickh39/DT-Clubs-Day/main/images/favicon/apple-touch-icon.png" alt="Logo">
+    <img src="https://raw.githubusercontent.com/PatrickH39/DT-Clubs-Day/main/images/readme-logo.png" alt="Logo">
   </a>
 
 <h3 align="center">DT Clubs Day</h3>

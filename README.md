@@ -1,18 +1,18 @@
 <!-- PROJECT LOGO -->
 <br>
 <div align="center">
-  <a href="https://dtclubsday.ca">
-    <img src="https://raw.githubusercontent.com/patrickh39/DT-Clubs-Day/main/images/favicon/apple-touch-icon.png" alt="Logo">
+  <a href="https://clubsday.patrickh.ca">
+    <img src="https://raw.githubusercontent.com/PatrickH39/DT-Clubs-Day/main/images/readme-logo.png" alt="Logo">
   </a>
 
-<h3 align="center">DT Virtual Clubs Day 2021</h3>
+<h3 align="center">DT Clubs Day</h3>
 
   <p align="center">
     A website for 1000+ students to sign up for clubs @ DT
     <br />
     <a href="https://github.com/patrickh39/DT-Clubs-Day/issues">Report Bug</a>
     ·
-    <a href="https://dtclubsday.ca"><b>View Website</b></a>
+    <a href="https://clubsday.patrickh.ca"><b>View Website</b></a>
     ·
     <a href="https://github.com/patrickh39/DT-Clubs-Day#contact">Contact</a>
   </p>
@@ -43,7 +43,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 <!-- CONTACT -->
 ## Contact
 
-For any inquiries regarding this project, please email **[help@dtclubsday.ca](mailto:help@dtclubsday.ca)**.
+For any inquiries regarding this project, please email **[me@patrickh.ca](mailto:me@patrickh.ca)**.
 
 
 <!-- ACKNOWLEDGMENTS -->
